@@ -65,6 +65,7 @@
     top: 20px;
     right: 20px;
     bottom: auto;
+    cursor: pointer;
 }
 
 .rango-notice_close-icon {
