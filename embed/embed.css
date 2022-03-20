@@ -1,0 +1,102 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.rango-notice {
+    position: fixed;
+    left: auto;
+    top: auto;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99999;
+    width: 90%;
+    max-width: 400px;
+    padding: 28px;
+    background-color: #ffc700;
+    font-family: mortise, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.rango-notice_title {
+    margin-top: 0;
+    margin-bottom: .4em;
+    padding-right: 20px;
+    font-family: tenon, Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -.01em;
+}
+
+.rango-notice_button {
+    display: inline-block;
+    width: 100%;
+    margin-top: 12px;
+    margin-right: 12px;
+    padding: 15px 18px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    -webkit-transition: border-color .2s cubic-bezier(.25, .46, .45, .94), color .2s cubic-bezier(.165, .84, .44, 1), background-color .2s cubic-bezier(.165, .84, .44, 1);
+    transition: border-color .2s cubic-bezier(.25, .46, .45, .94), color .2s cubic-bezier(.165, .84, .44, 1), background-color .2s cubic-bezier(.165, .84, .44, 1);
+    font-family: tenon, sans-serif;
+    color: #222;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .01em;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.rango-notice_button:hover {
+    background-color: transparent;
+    color: #222;
+    text-decoration: none;
+}
+
+.rango-notice_close {
+    position: absolute;
+    left: auto;
+    top: 20px;
+    right: 20px;
+    bottom: auto;
+}
+
+.rango-notice_close-icon {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width:767px) {
+    .rango-notice_title {
+        font-size: 1.4rem;
+    }
+
+    .rango-notice_button {
+        padding-top: 15px;
+        padding-bottom: 14px;
+    }
+}
+
+@font-face {
+    font-family: tenon;
+    src: url(https://coreymoen.github.io/rango/embed/fonts/t700.woff2) format("woff2"), url(https://coreymoen.github.io/rango/embed/fonts/t700.woff) format("woff"), url(https://coreymoen.github.io/rango/embed/fonts/t700.otf) format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: mortise;
+    src: url(https://coreymoen.github.io/rango/embed/fonts/m400.woff2) format("woff2"), url(https://coreymoen.github.io/rango/embed/fonts/m400.woff) format("woff"), url(https://coreymoen.github.io/rango/embed/fonts/m400.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: auto;
+}
